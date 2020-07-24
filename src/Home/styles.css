@@ -1,0 +1,81 @@
+.HomePage {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.home-page-container {
+    background: #fff;
+    padding: 4rem;
+    width: 600px;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 0;
+    color: #1a202c;
+    font-family: Aileron, sans-serif;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin: 0 0 2rem 0;
+    color: #805ad5;
+    font-style: italic;
+    font-family: Aileron, sans-serif;
+    
+}
+
+.create-new-event-btn, .view-event-btn {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 2rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Aileron, sans-serif;
+}
+.create-new-event-btn {
+    background:#805ad5;
+}
+
+.create-new-event-btn:hover, .view-event-btn:hover{
+    cursor: pointer;
+}
+
+.landing-img {
+    width: 400px;
+    margin: 1rem 0;
+}
+.view-event-btn {
+    background: #4a5568;
+    margin-left: 1rem;
+}
+
+.hero-text {
+    color :#805ad5;
+    font-weight: bold;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.025em;
+    font-family: Aileron, sans-serif;
+}
+
+.footer {
+    justify-self: start;
+    color: #fff;
+    font-family: Aileron, sans-serif;
+    font-weight: bold;
+    background: #805ad5;
+    width: 100%;
+}
+
+.footer p {
+    padding: 1rem;
+    margin: 0;
+}

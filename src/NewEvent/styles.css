@@ -1,0 +1,251 @@
+.NewEventPage {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: Aileron, sans-serif;
+}
+
+input {
+    font-family: Aileron, sans-serif;
+}
+.title-input-wrapper {
+    position: relative;
+    width: 400px;
+    /* margin: 2rem 0; */
+}
+.title-input-wrapper-alt {
+    position: relative;
+    width:fit-content;
+    display: inline-block;
+}
+.icon-label {
+    align-self: center;
+    justify-self: center;   
+}
+
+.description-label {
+    align-self: start;
+    justify-self: center;
+}
+.label-icon {
+    color: #718096;
+   
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+}
+
+.headline {
+    display: inline-block;
+    margin: 0 0 0rem 0;
+    font-size: 2rem;
+    color: #1a202c;
+    font-weight: bold;
+    font-family: Aileron, sans-serif;
+
+}
+.title-input, .date-input {
+    font-size: 1.5rem;
+
+    border: none;
+    color: #1a202c;
+    width: 400px;
+    border-bottom: 1px solid  #cbd5e0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    background: rgba(237, 242, 247, 0);
+    transition: background 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.date-input-alt {
+    font-size: 1.5rem;
+
+    border: none;
+    color: #1a202c;
+    width: auto;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    /* border: none; */
+    border-bottom: 1px solid  #cbd5e0;
+    background: rgba(237, 242, 247, 0);
+    transition: background 0.2s;
+    transition-timing-function: ease-out;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    display: inline-block;
+}
+
+.date-input {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    border: none;
+    background: rgba(237, 242, 247, 0);
+    transition: background 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.date-input:hover, .date-input-alt:hover, .title-input:hover {
+    background: rgba(237, 242, 247, 1);
+    cursor: text;
+}
+
+.date-input:focus, .date-input-alt:focus, .title-input:focus{
+    background: rgba(237, 242, 247, 1);
+}
+.title-input-bottom-border {
+    position: absolute;
+    top: calc(100% - 2px);
+    background:   #cbd5e0;
+    width: 0px;
+    height: 0px;
+    transition: width 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.title-input-bottom-border.focused {
+    background: #805ad5;
+    height: 3px;
+    width: 100%;
+}
+.title-input:focus, .date-input:focus, .date-input-alt {
+    outline: none;
+}
+
+.start-time-input, .end-time-input {
+    width: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;;
+}
+.date-input-alt:focus {
+    background: rgba(237, 242, 247, 1);
+}
+.main-page-container {
+    background: #fff;
+    padding: 4rem;
+    width: 600px;
+    border-radius: 0.25rem;
+}
+
+.date-input-container {
+    display: grid;
+    /* grid-auto-columns: auto;
+    grid-auto-rows: auto; */
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.row-1 {
+    grid-row: 1;
+}
+
+.row-2 {
+    grid-row: 2;
+}
+
+.row-3 {
+    grid-row: 3;
+}
+
+.row-4 {
+    grid-row: 4;
+}
+.row-5 {
+    grid-row: 5;
+}
+
+.row-6 {
+    grid-row: 6;
+}
+.col-1 {
+    grid-column: 1;
+}
+
+.col-2 {
+    grid-column: 2;
+}
+
+.col-3 {
+    grid-column: 3;
+}
+.col-4 {
+    grid-column: 4;
+}
+
+.col-5 {
+    grid-column: 5;
+}
+
+
+.description-textarea {
+    width: 100%;
+    border: 1px solid  #cbd5e0;
+    border-radius: 0.25rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+.description-textarea:focus {
+    outline: 3px solid #805ad5;
+    border: 1px solid #fff;
+}
+
+.submit-btn {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 2rem;
+    color: #fff;
+    background: #805ad5;
+
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Aileron, sans-serif;
+}
+.submit-btn:hover {
+    cursor: pointer;
+}
+.checkbox-ss {
+    display: inline-block;
+    align-self: center;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2rem;
+    border: 2px solid #805ad5;
+    vertical-align: 0;
+    border-radius: 0.375rem;
+    padding: 0.0625rem;
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+    align-items: center;
+  
+}
+.checkbox-ss.active {
+    background: #805ad5;
+}
+
+.checkbox-ss .icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: 0;
+
+}
+
+.all-day-text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
