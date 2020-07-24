@@ -44,7 +44,7 @@ export default (props) => {
         })
     }
     return (
-        <div className={`time-picker-container ${visibility ? "" : "hidden"}`} ref={timeRef}>
+        <div className={`time-picker-container ${visibility ? "" : "hidden"}`}  ref={timeRef}>
             {renderTimePicker()}
             {/* <div className="time-picker-item" tabIndex="0">
                 <span>12:00am</span>

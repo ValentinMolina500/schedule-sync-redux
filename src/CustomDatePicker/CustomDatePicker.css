@@ -1,0 +1,149 @@
+.date-picker-container {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+    display: inline-block;
+    /* width: 300px */
+    padding: 1rem;
+    border-radius: 0.25rem;
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    top: calc(100% + 0.5rem);
+    left: 0;
+}
+.date-picker-container.hidden {
+    visibility: hidden;
+}
+
+.date-picker-top-bar {
+    display: flex;
+    align-content: center;
+    /* padding: 0.5rem 2rem; */
+    padding-bottom: 1rem;
+}
+.date-picker-top-bar svg {
+    align-self: center;
+    color: #4a5568;
+    border-radius: 100%;
+    padding: 4px;
+    width: 16px !important;
+    height: 16px !important;
+    user-select: none;
+}
+
+.date-picker-top-bar svg:hover {
+    background-color: #e2e8f0;
+    cursor: pointer;
+}
+.date-picker-top-bar:last-child{
+    margin-left: 1rem;
+}
+
+.month-heading {
+    margin: 0;
+    margin-right: auto;
+    font-weight: bold;
+    color: #1a202c;
+    align-self: center;
+}
+
+.dp-month, .dp-cell {
+    font-size: 0.875rem;   
+    color: #1a202c;
+}
+.dp-cell {
+    border-radius: 100%;
+  
+  
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px
+}
+
+.dp-month {
+    
+}
+
+.dp-cell-selected {
+    color: rgba(128, 90, 213, 1);
+    background: rgba(128, 90, 213, 0.25);
+}
+.dp-cell:hover:not(.dp-month) {
+    background-color: #e2e8f0;
+    cursor: pointer;
+}
+
+.dp-text-muted {
+    color: #a0aec0;
+}
+.date-grid {
+    display: grid;
+    grid-auto-rows: 26px;
+    grid-auto-columns: 26px;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+
+/* Sunday */
+
+.dp-c-1 {
+    grid-column-start: 1;
+}
+
+/* Monday */
+
+.dp-c-2 {
+    grid-column-start: 2;
+}
+
+/* Tuesday */
+
+.dp-c-3 {
+    grid-column-start: 3;
+}
+
+/* Wednesday */
+
+.dp-c-4 {
+    grid-column-start: 4;
+}
+
+/* Thursday */
+
+.dp-c-5 {
+    grid-column-start: 5;
+}
+
+/* Friday */
+
+.dp-c-6 {
+    grid-column-start: 6;
+}
+
+/* Saturday */
+
+.dp-c-7 {
+    grid-column-start: 7;
+}
+
+.dp-r-1 {
+    grid-row-start: 1;
+}
+
+.dp-r-2 {
+    grid-row-start: 2;
+}
+
+.dp-r-3 {
+    grid-row-start: 3;
+}
+
+.dp-r-4 {
+    grid-row-start: 4;
+}
+
+.dp-r-7 {
+    grid-row-start: 7;
+}

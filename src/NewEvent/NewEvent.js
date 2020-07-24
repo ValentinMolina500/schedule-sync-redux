@@ -8,6 +8,7 @@ import {
     faCheck,
 } from "@fortawesome/pro-regular-svg-icons";
 import TimePicker from "../CustomTimePicker/CustomTimePicker";
+import DatePicker from "../CustomDatePicker/CustomDatePicker";
 import { minutesToTimeString, timeStringToMinutes } from "../utils/time";
 import "./styles.css";
 
@@ -30,6 +31,10 @@ export default (props) => {
     const [endValueString, setEndValueString] = useState(
         minutesToTimeString(30)
     );
+
+    const [datePickerVisibility, setDatePickerVisibility] = useState(false);
+    const [dateString, setDateString] = useState("");
+
     const startInputRef = useRef(null);
 
     const setStartInputValue = (time) => {
@@ -86,18 +91,21 @@ export default (props) => {
                     {/* <input id="date" className="row-2 col-2 date-input" type="date"></input> */}
                     <div className="title-input-wrapper-alt row-3 col-2">
                         <input
-                            onFocus={() => setDateInputFocused(true)}
+                            onFocus={() => { setDateInputFocused(true); setDatePickerVisibility(true) }}
                             onBlur={() => setDateInputFocused(false)}
-                            type="date"
                             className="date-input-alt"
+                            
                             // placeholder="Add Title"
                             id="date-input"
+                            readOnly
+                            value={dateString}
                         ></input>
                         <div
                             className={`title-input-bottom-border ${
                                 dateInputFocused ? "focused" : ""
                             }`}
                         />
+                         <DatePicker visibilityCallback={setDatePickerVisibility} visible={datePickerVisibility} onDateSelected={setDateString}/>
                     </div>
                     <label
                         htmlFor="time-input"
@@ -210,6 +218,7 @@ export default (props) => {
                     <div className="row-6 col-2">
                         <button className="submit-btn ">Submit</button>
                         {/* <TimePicker /> */}
+                       
                     </div>
                 </div>
             </div>

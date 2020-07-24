@@ -44,3 +44,8 @@
     outline: none;
     background: rgba(237, 242, 247, 1);
 }
+
+.dp-cell, .dp-month {
+    align-self: center;
+    justify-self: center;
+}

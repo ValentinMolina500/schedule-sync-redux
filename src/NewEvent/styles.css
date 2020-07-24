@@ -10,6 +10,10 @@
 input {
     font-family: Aileron, sans-serif;
 }
+
+#date-input {
+    width: 256px !important;
+}
 .title-input-wrapper {
     position: relative;
     width: 400px;
@@ -247,5 +251,7 @@ input {
     sans-serif;
     font-size: 1rem;
     margin-left: 0.5rem;
+    display: inline-block;
+    justify-self: end;
 }
 
