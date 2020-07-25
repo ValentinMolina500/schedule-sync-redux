@@ -67,8 +67,11 @@
 }
 
 .dp-cell-selected {
-    color: rgba(128, 90, 213, 1);
-    background: rgba(128, 90, 213, 0.25);
+    /* color: rgba(128, 90, 213, 1);
+    background: rgba(128, 90, 213, 0.25); */
+    color: #fff;
+    background: rgba(128, 90, 213, 1);
+    font-weight: bold;
 }
 .dp-cell:hover:not(.dp-month) {
     background-color: #e2e8f0;

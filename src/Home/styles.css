@@ -79,3 +79,18 @@
     padding: 1rem;
     margin: 0;
 }
+
+.header {
+    justify-self: start;
+    color: #fff;
+    font-family: Aileron, sans-serif;
+    font-weight: bold;
+    background: #805ad5;
+    width: 100%;
+}
+
+.header p {
+    padding: 1rem 0;
+    width: calc(728px);
+    margin: 0 auto;
+}

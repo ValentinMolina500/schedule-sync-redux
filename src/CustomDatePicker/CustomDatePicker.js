@@ -55,26 +55,27 @@ export default (props) => {
     const [selectedCell, setSelectedCell] = useState({});
     const dateRef = useRef(null);
 
-    useEffect(() => {
-        /**
-         * Alert if clicked on outside of element
-         */
-        function handleClickOutside(event) {
-            if (dateRef.current && !dateRef.current.contains(event.target) && visible) {
-                visibilityCallback(false)
-            }
-        }
 
-        // Bind the event listener
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [dateRef, visible]);
+    // useEffect(() => {
+    //     /**
+    //      * Alert if clicked on outside of element
+    //      */
+    //     function handleClickOutside(event) {
+    //         if (dateRef.current && !dateRef.current.contains(event.target) && visible) {
+    //             visibilityCallback(false)
+    //         }
+    //     }
+
+    //     // Bind the event listener
+    //     document.addEventListener("mousedown", handleClickOutside);
+    //     return () => {
+    //         // Unbind the event listener on clean up
+    //         document.removeEventListener("mousedown", handleClickOutside);
+    //     };
+    // }, [dateRef, visible]);
 
     return (
-        <div ref={dateRef} className={`date-picker-container ${visible ? "" : "hidden"}`}>
+        <div ref={dateRef} tabIndex={0} onBlur={() => visibilityCallback(false)} className={`date-picker-container ${visible ? "" : "hidden"}`}>
             <div className="date-picker-top-bar">
                 <div className="month-heading">{getMonth(currentDate.getMonth())}&nbsp;{currentDate.getFullYear()}</div>
                 <FontAwesomeIcon icon={faChevronLeft} onClick={onLeftButtonClick}/>

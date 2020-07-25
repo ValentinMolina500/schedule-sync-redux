@@ -10,9 +10,10 @@ import {
 import TimePicker from "../CustomTimePicker/CustomTimePicker";
 import DatePicker from "../CustomDatePicker/CustomDatePicker";
 import { minutesToTimeString, timeStringToMinutes } from "../utils/time";
-import "./styles.css";
+import "./NewEvent.css";
 
 export default (props) => {
+    const { history } = props;
     const [titleInputFocused, setTitleInputFocused] = useState(false);
     const [dateInputFocused, setDateInputFocused] = useState(false);
     // const [timeInputFocused, setTimeInputFocused] = useState(false);
@@ -92,7 +93,7 @@ export default (props) => {
                     <div className="title-input-wrapper-alt row-3 col-2">
                         <input
                             onFocus={() => { setDateInputFocused(true); setDatePickerVisibility(true) }}
-                            onBlur={() => setDateInputFocused(false)}
+                            onBlur={() =>  { setDateInputFocused(false);  }}
                             className="date-input-alt"
                             
                             // placeholder="Add Title"
@@ -118,8 +119,8 @@ export default (props) => {
                         />
                     </label>
                     <div
-                        className="row-4 col-2"
-                        style={{ display: "flex", alignItems: "center" }}
+                        className="row-4 col-2 time-input-container"
+                        // style={{ display: "flex", width:"400px", alignItems: "center", justifyContent:"flex-start" }}
                     >
                         <div className="title-input-wrapper-alt ">
                             <input
@@ -147,6 +148,8 @@ export default (props) => {
                                 currentValue={startValueMinutes}
                                 setVisibility={setStartVisibility}
                             />
+
+                            <label htmlFor="end-time-input" className="time-input-label">No Earlier Than...</label>
                         </div>
                         <p
                             style={{
@@ -175,6 +178,8 @@ export default (props) => {
                                     endTimeInputFocused ? "focused" : ""
                                 }`}
                             />
+
+                            <label htmlFor="end-time-input" className="time-input-label">No Later Than...</label>
 
                             <TimePicker
                                 visibility={endVisibility}
@@ -216,7 +221,7 @@ export default (props) => {
                         ></textarea>
                     </div>
                     <div className="row-6 col-2">
-                        <button className="submit-btn ">Submit</button>
+                        <button onClick={() => history.push("/view-survey")} className="submit-btn">Submit</button>
                         {/* <TimePicker /> */}
                        
                     </div>

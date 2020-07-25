@@ -1,45 +1,54 @@
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background: #e2e8f0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-body .App {
-    height: 100%;
-    width: 100%;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (min-width: 801px) {
+    body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background: #e2e8f0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+            "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+            "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    body .App {
+        height: 100%;
+        width: 100%;
+    }
 }
 
+@media screen and (max-width: 800px) {
+    body {
+        margin: 0;
+    
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+            "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+            "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        height: auto;
+    }
+   
+}
 @font-face {
     font-family: Aileron;
     font-weight: normal;
     font-style: normal;
-    src: local('Aileron'), url('./fonts/Aileron-Regular.otf');
+    src: local("Aileron"), url("./fonts/Aileron-Regular.otf");
 }
 
 @font-face {
     font-family: Aileron;
     font-weight: bold;
     font-style: normal;
-    src: local('Aileron'), url('./fonts/Aileron-Bold.otf');
+    src: local("Aileron"), url("./fonts/Aileron-Bold.otf");
 }
 
 @font-face {
     font-family: Aileron;
     font-weight: bold;
     font-style: italic;
-    src: local('Aileron'), url('./fonts/Aileron-Italic.otf');
+    src: local("Aileron"), url("./fonts/Aileron-Italic.otf");
 }
 
 .end-time-input {
-   
 }
-
