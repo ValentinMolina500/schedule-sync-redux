@@ -34,7 +34,7 @@ export default (props) => {
     );
 
     const [datePickerVisibility, setDatePickerVisibility] = useState(false);
-    const [dateString, setDateString] = useState("");
+    const [dateString, setDateString] = useState(formatDate(new Date()));
 
     const startInputRef = useRef(null);
 
@@ -73,7 +73,7 @@ export default (props) => {
                             id="title-input"
                         ></input>
                         <div
-                            className={`title-input-bottom-border ${
+                            className={`input-bottom-border ${
                                 titleInputFocused ? "focused" : ""
                             }`}
                         />
@@ -90,11 +90,11 @@ export default (props) => {
                     </label>
                     {/* <label htmlFor="date">Date</label> */}
                     {/* <input id="date" className="row-2 col-2 date-input" type="date"></input> */}
-                    <div className="title-input-wrapper-alt row-3 col-2">
+                    <div className="input-wrapper row-3 col-2">
                         <input
                             onFocus={() => { setDateInputFocused(true); setDatePickerVisibility(true) }}
                             onBlur={() =>  { setDateInputFocused(false);  }}
-                            className="date-input-alt"
+                            className="date-time-input"
                             
                             // placeholder="Add Title"
                             id="date-input"
@@ -102,7 +102,7 @@ export default (props) => {
                             value={dateString}
                         ></input>
                         <div
-                            className={`title-input-bottom-border ${
+                            className={`input-bottom-border ${
                                 dateInputFocused ? "focused" : ""
                             }`}
                         />
@@ -122,14 +122,14 @@ export default (props) => {
                         className="row-4 col-2 time-input-container"
                         // style={{ display: "flex", width:"400px", alignItems: "center", justifyContent:"flex-start" }}
                     >
-                        <div className="title-input-wrapper-alt ">
+                        <div className="input-wrapper">
                             <input
                                 onFocus={() => {
                                     setStartTimeInputFocused(true);
                                     setStartVisibility(true);
                                 }}
                                 onBlur={() => setStartTimeInputFocused(false)}
-                                className="date-input-alt start-time-input"
+                                className="date-time-input start-time-input"
                                 // placeholder="Add Title"
                                 id="start-time-input"
                                 ref={startInputRef}
@@ -138,7 +138,7 @@ export default (props) => {
                                 readOnly
                             ></input>
                             <div
-                                className={`title-input-bottom-border ${
+                                className={`input-bottom-border ${
                                     startTimeInputFocused ? "focused" : ""
                                 }`}
                             />
@@ -159,14 +159,14 @@ export default (props) => {
                         >
                             &mdash;
                         </p>
-                        <div className="title-input-wrapper-alt">
+                        <div className="input-wrapper">
                             <input
                                 onFocus={() => {
                                     setEndTimeInputFocused(true);
                                     setEndVisibility(true);
                                 }}
                                 onBlur={() => setEndTimeInputFocused(false)}
-                                className="date-input-alt end-time-input"
+                                className="date-time-input end-time-input"
                                 // placeholder="Add Title"
                                 id="end-time-input"
                                 disabled={allDayClicked}
@@ -174,7 +174,7 @@ export default (props) => {
                                 value={endValueString}
                             ></input>
                             <div
-                                className={`title-input-bottom-border ${
+                                className={`input-bottom-border ${
                                     endTimeInputFocused ? "focused" : ""
                                 }`}
                             />
@@ -230,3 +230,31 @@ export default (props) => {
         </div>
     );
 };
+
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+];
+
+const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+]
+function formatDate(date) {
+    return `${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}`;
+}

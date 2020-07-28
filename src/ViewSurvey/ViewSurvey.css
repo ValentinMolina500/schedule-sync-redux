@@ -1,0 +1,67 @@
+.ViewSurvey {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-container {
+    background: #fff;
+    padding: 4rem;
+    width: 600px;
+    border-radius: 0.25rem;
+}
+
+.ViewSurvey .headline {
+    display: block;
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+    color: #1a202c;
+    font-weight: bold;
+    font-family: Aileron, sans-serif;
+}
+
+.date-subheading-container {
+    color: #718096;
+    font-family: Aileron, sans-serif;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    width: auto;
+    display: inline-block;
+}
+
+svg {
+  
+}
+rect {
+    border-radius: 0.25rem;
+}
+rect:hover {
+    fill: rgba(128, 90, 213, 0.7);
+    cursor: pointer;
+}
+.time-label {
+    margin-left: 1rem;
+}
+.survey-title {
+    color: #1a202c;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+    margin: 0.5rem 0 0 0;
+    font-family: Aileron, sans-serif;
+}
+
+.bar-chart-container {
+    overflow-x: auto;
+    width: auto;
+    margin: 2rem 0;
+
+    background: #f7fafc;
+    border-radius: 0.25rem;
+}
+.bar-chart {
+    width: auto;
+}
+

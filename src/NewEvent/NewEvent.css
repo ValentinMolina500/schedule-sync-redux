@@ -31,7 +31,7 @@
        
         /* margin: 2rem 0; */
     }
-    .title-input-wrapper-alt {
+    .input-wrapper {
         position: relative;
         width:fit-content;
         display: inline-block;
@@ -47,8 +47,7 @@
         justify-self: center;
     }
     .label-icon {
-        color: #718096;
-       
+        color: #718096;  
         width: 1.25rem !important;
         height: 1.25rem !important;
     }
@@ -76,7 +75,7 @@
         transition-timing-function: ease-out;
     }
     
-    .date-input-alt {
+    .date-time-input {
         font-size: 1.5rem;
     
         border: none;
@@ -107,15 +106,15 @@
         transition-timing-function: ease-out;
     }
     
-    .date-input:hover, .date-input-alt:hover, .title-input:hover {
+    .date-input:hover, .date-time-input:hover, .title-input:hover {
         background: rgba(237, 242, 247, 1);
         cursor: text;
     }
     
-    .date-input:focus, .date-input-alt:focus, .title-input:focus{
+    .date-input:focus, .date-time-input:focus, .title-input:focus{
         background: rgba(237, 242, 247, 1);
     }
-    .title-input-bottom-border {
+    .input-bottom-border {
         position: absolute;
         top: calc(100% - 2px);
         background:   #cbd5e0;
@@ -125,12 +124,12 @@
         transition-timing-function: ease-out;
     }
     
-    .title-input-bottom-border.focused {
+    .input-bottom-border.focused {
         background: #805ad5;
         height: 3px;
         width: 100%;
     }
-    .title-input:focus, .date-input:focus, .date-input-alt {
+    .title-input:focus, .date-input:focus, .date-time-input {
         outline: none;
     }
     
@@ -140,7 +139,7 @@
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;;
     }
-    .date-input-alt:focus {
+    .date-time-input:focus {
         background: rgba(237, 242, 247, 1);
     }
     .main-page-container {
@@ -340,16 +339,16 @@
         transition-timing-function: ease-out;
     }
     
-    .date-input:hover, .date-input-alt:hover, .title-input:hover {
+    .date-input:hover, .date-time-input:hover, .title-input:hover {
         background: rgba(237, 242, 247, 1);
         cursor: text;
     }
     
-    .date-input:focus, .date-input-alt:focus, .title-input:focus{
+    .date-input:focus, .date-time-input:focus, .title-input:focus{
         background: rgba(237, 242, 247, 1);
     }
 
-    .title-input-bottom-border {
+    .input-bottom-border {
         position: absolute;
         top: calc(100% - 2px);
         background:   #cbd5e0;
@@ -359,20 +358,13 @@
         transition-timing-function: ease-out;
     }
     
-    .title-input-bottom-border.focused {
+    .input-bottom-border.focused {
         background: #805ad5;
         height: 3px;
         width: 100%;
     }
-    .title-input:focus, .date-input:focus, .date-input-alt {
+    .title-input:focus, .date-input:focus, .date-time-input {
         outline: none;
-    }
-
-    .title-input-wrapper {
-        position: relative;
-        width: 400px;
-       
-        /* margin: 2rem 0; */
     }
     
     .headline {
