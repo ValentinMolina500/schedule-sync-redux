@@ -1,3 +1,13 @@
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+body, html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 @media screen and (min-width: 801px) {
     body {
         margin: 0;
@@ -25,9 +35,8 @@
             "Helvetica Neue", sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        height: auto;
+        /* height: auto; */
     }
-   
 }
 @font-face {
     font-family: Aileron;
@@ -38,9 +47,23 @@
 
 @font-face {
     font-family: Aileron;
+    font-weight: 600;
+    font-style: normal;
+    src: local("Aileron"), url("./fonts/Aileron-SemiBold.otf");
+}
+
+@font-face {
+    font-family: Aileron;
     font-weight: bold;
     font-style: normal;
     src: local("Aileron"), url("./fonts/Aileron-Bold.otf");
+}
+
+@font-face {
+    font-family: Aileron;
+    font-weight: normal;
+    font-style: normal;
+    src: local("Aileron"), url("./fonts/Aileron-Regular.otf");
 }
 
 @font-face {

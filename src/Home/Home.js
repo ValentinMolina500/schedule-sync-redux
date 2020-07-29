@@ -17,7 +17,7 @@ export default (props) => {
                 <img src={landingImage} className="landing-img" />
                 <p className="hero-text">Find time to meet with the people you like</p>
                 <button onClick={() => history.push("/new-survey")} className="create-new-event-btn">Create Survey</button>
-                <button className="view-event-btn">View Survey</button>
+                <button onClick={() => history.push("/answer-survey")} className="view-event-btn">View Survey</button>
             </div>
             {/* <div className="footer">
                 <p>

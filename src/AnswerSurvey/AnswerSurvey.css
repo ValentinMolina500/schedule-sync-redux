@@ -1,0 +1,156 @@
+/* Styles for desktops */
+
+@media only screen and (max-width: 600px) {
+    .AnswerSurvey .info-container {
+        padding: 1rem;       
+        background: #fff;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        z-index: 10;
+        /* background: #805ad5; */
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+        
+    }
+
+    .AnswerSurvey .info-container .logo {
+        width: 28px;
+        height: 28px;
+        grid-row: 1 / 2;
+        grid-column: 1;
+    }
+
+    .AnswerSurvey .action-bar-container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        grid-row:  1;
+        grid-column: 2;
+    }
+
+    .AnswerSurvey .title-date-container {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem; */
+        grid-row: 2;
+        grid-column: 2;
+        font-family: Aileron, sans-serif;
+        font-weight: normal;
+        color: #011627;
+    }
+
+    .AnswerSurvey .event-title {
+        font-weight: normal;
+        color: #011627;
+        font-weight: 600;
+    }
+    .AnswerSurvey .middle-dot {
+        margin: 0 0.5rem;
+    }
+    .AnswerSurvey .date-text {
+        font-weight: normal;
+        color: #011627;
+    }
+    .AnswerSurvey .headline {
+        /* color: #1a202c; */
+        /* color: #FDFFFC; */
+        color: #011627;
+        margin: 0rem;
+        font-size: 1.25rem;
+        font-family: Aileron, sans-serif; 
+        font-weight: bold;
+    }
+
+    .AnswerSurvey {
+        height: 100%;
+        width: 100%;
+    }
+
+    .AnswerSurvey .main-page-container {
+        background: #e2e8f0;
+        height: 100%;
+        margin: 0;
+    }
+
+    .AnswerSurvey .main-content-container {
+        /* background: #fff; */
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100%;
+    }
+
+    .AnswerSurvey .time-selection-container {
+        background: #e2e8f0;
+    }
+
+    .AnswerSurvey .btn-container {
+        padding: 1rem;
+    }
+
+    .AnswerSurvey .confirm-selection-btn {
+        border: none;
+        border-radius: 0.25rem;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: Aileron, sans-serif;
+        background:#805ad5;
+        padding: 0.75rem 2rem;
+        display: block;
+        width: 100%;
+    }
+
+    .AnswerSurvey .time-selection-container {
+        display: grid;
+        background: #e2e8f0;
+        padding: 1rem;
+        grid-auto-rows: calc((100% - 4rem + 1px) / 5);
+        grid-auto-columns: 1fr 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        overflow-y: auto;
+        /* z-index: 5; */
+    }
+
+    .AnswerSurvey .time-selection-container > div {
+        background: white;
+        border-radius: 0.25rem;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        display: flex;
+        align-items: center;
+        font-family: Aileron, sans-serif; 
+        justify-content: center;
+        /* font-weight: bold; */
+        font-weight: 600;
+        font-size: 1rem;
+        color: #011627;
+    }
+
+    .AnswerSurvey .time-selection-container div.active {
+        color: #fff;
+        background: #805ad5;
+        box-shadow: unset;
+    }
+
+    .button-sub {
+        font-size: 0.75rem;
+        color:#718096;
+        text-align: right;
+        opacity: 1;
+        transition: opacity 0.3s;
+        transition-timing-function: ease-out;
+    }
+    .AnswerSurvey .hidden {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+    .AnswerSurvey .time-selection-container div.active .button-sub {
+        color: #fff;
+    }
+}
+@media screen and (min-width: 600px) {
+    
+}
+
