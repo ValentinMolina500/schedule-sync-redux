@@ -15,7 +15,7 @@ export default (props) => {
                 <h1 className="title">Schedule Sync</h1>
                 <p className="subtitle">Dream Edition</p>
                 <img src={landingImage} className="landing-img" />
-                <p className="hero-text">Find Times to Meet With the People You Like</p>
+                <p className="hero-text">Find time to meet with the people you like</p>
                 <button onClick={() => history.push("/new-survey")} className="create-new-event-btn">Create Survey</button>
                 <button className="view-event-btn">View Survey</button>
             </div>
