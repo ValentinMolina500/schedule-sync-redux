@@ -142,7 +142,7 @@
     .date-time-input:focus {
         background: rgba(237, 242, 247, 1);
     }
-    .main-page-container {
+    .NewEventPage .main-page-container {
         background: #fff;
         padding: 4rem;
         width: 600px;

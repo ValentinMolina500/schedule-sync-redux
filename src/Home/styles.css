@@ -80,14 +80,14 @@
     margin: 0;
 }
 
-.header {
+/* .header {
     justify-self: start;
     color: #fff;
     font-family: Aileron, sans-serif;
     font-weight: bold;
     background: #805ad5;
     width: 100%;
-}
+} */
 
 .header p {
     padding: 1rem 0;
