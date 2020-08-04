@@ -6,11 +6,6 @@ export default (props) => {
     const { history } = props;
     return (
         <div className="HomePage">
-            {/* <div className="header">
-                <p>
-                    Schedule Sync
-                </p>
-            </div> */}
             <div className="home-page-container">
                 <h1 className="title">Schedule Sync</h1>
                 <p className="subtitle">Dream Edition</p>
@@ -19,11 +14,6 @@ export default (props) => {
                 <button onClick={() => history.push("/new-survey")} className="create-new-event-btn">Create Survey</button>
                 <button className="view-event-btn">View Survey</button>
             </div>
-            {/* <div className="footer">
-                <p>
-                    Made in Washington
-                </p>
-            </div> */}
         </div>
     )
 }
